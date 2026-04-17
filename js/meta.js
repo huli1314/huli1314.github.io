@@ -8,7 +8,6 @@
     
     localStorage.setItem("last_visit", new Date().toISOString());
     localStorage.setItem("visit_count", visitCount);
-    localStorage.setItem("last_path", currentPath);
     
     // 2. 显示设备信息
     let device = "未知设备";
@@ -70,17 +69,16 @@
     metaDiv.innerHTML = `👁️ ${onlineCount} 人正在查看`;
     document.body.appendChild(metaDiv);
     
-// 7. 根据之前访问过的路径显示提示
-let lastPath = localStorage.getItem("last_path");
-let currentPath = window.location.pathname;
-
-if(lastPath && lastPath !== currentPath) {
-    let lastPageName = lastPath.split("/").pop().replace(".html", "");
-    console.log(`%c[系统] 你从 ${lastPageName} 过来的。`, "color: #666");
-}
-
-// 保存当前路径供下次使用
-localStorage.setItem("last_path", currentPath);
+    // 7. 根据之前访问过的路径显示提示
+    let lastPath = localStorage.getItem("last_path");
+    
+    if(lastPath && lastPath !== currentPath) {
+        let lastPageName = lastPath.split("/").pop().replace(".html", "");
+        console.log(`%c[系统] 你从 ${lastPageName} 过来的。`, "color: #666");
+    }
+    
+    // 保存当前路径供下次使用
+    localStorage.setItem("last_path", currentPath);
     
     // 8. 第二天新内容检查（在主页单独实现，这里只记录日期）
     let lastDate = localStorage.getItem("last_date");
