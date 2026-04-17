@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>林述的微博</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .back-link {
+            display: block;
+            padding: 16px;
+            text-align: center;
+            color: #ff8200;
+            text-decoration: none;
+            border-top: 1px solid #f0f0f0;
+        }
+        .comment-section {
+            background: #fafafa;
+            padding: 16px;
+            border-top: 1px solid #f0f0f0;
+        }
+        .comment {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+        .post-image {
+            margin: 16px 0;
+            background: #1a1a1a;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            border-radius: 8px;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="weibo-card" style="margin:0; border-radius:0;">
+        <div class="card-header">
+            <div class="avatar">林</div>
+            <div class="user-info">
+                <div class="name">林述的日常</div>
+                <div class="time">2024-08-18 09:30 · 微博客户端</div>
+            </div>
+        </div>
+        <div class="content">
+            <p>昨晚又听见脚步声了。这次就在门口。</p>
+            <p>我打开门，楼道灯是亮的，但没人。</p>
+            <p>电梯停在6楼，门开着。</p>
+            <p>我拍了张照片，放大看，电梯按钮上有手印。</p>
+            <div class="post-image" onclick="alert('素材：elevator_button.png\n提示：手印只有四根手指')">📷 点击查看照片</div>
+        </div>
+        <div class="actions"><span>❤️ 203</span> <span>💬 89</span> <span>🔄 34</span></div>
+    </div>
+    <div class="comment-section">
+        <div class="comment"><strong>苏晚不晚：</strong> 你昨天晚上几点开的门？我怎么不知道？</div>
+        <div class="comment"><strong>林述的日常：</strong> 回复 @苏晚不晚：你和小禾睡了，我不想吵醒你们。</div>
+        <div class="comment"><strong>翠苑王阿姨：</strong> 手印？小伙子你别吓我。6楼以前也有人说过手印的事。</div>
+        <div class="comment"><strong>林述的日常：</strong> 回复 @翠苑王阿姨：以前？谁说的？</div>
+        <div class="comment"><strong>翠苑王阿姨：</strong> 回复 @林述的日常：……算了不说了。你注意安全。</div>
+    </div>
+    <a href="../../index.html" class="back-link">← 返回首页</a>
+</div>
+<script src="../../js/meta.js"></script>
+</body>
+</html>
