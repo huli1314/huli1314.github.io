@@ -13,6 +13,13 @@ body {
     color: #333;
 }
 
+/* 强制所有图片自适应 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* 微博卡片样式 */
 .weibo-card {
     background: #fff;
@@ -80,6 +87,20 @@ body {
     font-size: 14px;
 }
 
+/* 微博配图样式 */
+.post-image {
+    margin: 16px 0;
+    background: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.post-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* 朋友圈样式 */
 .moment-card {
     background: #fff;
@@ -125,10 +146,13 @@ body {
     margin-top: 10px;
     background: #f0f0f0;
     border-radius: 8px;
-    padding: 20px;
     text-align: center;
-    color: #999;
-    cursor: pointer;
+}
+
+.moment-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* 业主群样式 */
@@ -242,6 +266,31 @@ body {
 .info-value {
     flex: 1;
     color: #333;
+}
+
+/* 小禾画作样式 */
+.drawing-placeholder {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.drawing-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 相册照片样式 */
+.photo-placeholder {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.photo-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* 通用按钮 */
