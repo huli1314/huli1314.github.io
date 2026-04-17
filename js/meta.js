@@ -74,6 +74,28 @@
     
     if(lastPath && lastPath !== currentPath) {
         let lastPageName = lastPath.split("/").pop().replace(".html", "");
+        // 文件名映射成中文名称
+        const nameMap = {
+            "index": "主页",
+            "20240715": "搬家第一天",
+            "20240722": "垃圾车",
+            "20240803": "图文店老板",
+            "20240810": "业主群",
+            "20240818": "电梯手印",
+            "20240825": "小禾的画",
+            "20240901": "最后一条微博",
+            "202408": "8月业主群",
+            "202409": "9月业主群",
+            "weibo": "陈屿微博",
+            "last_post": "陈屿草稿箱",
+            "post2": "贴吧帖子",
+            "006": "006档案",
+            "xiaohe": "小禾日记本",
+            "suwan": "苏晚笔记"
+        };
+        if(nameMap[lastPageName]) {
+            lastPageName = nameMap[lastPageName];
+        }
         console.log(`%c[系统] 你从 ${lastPageName} 过来的。`, "color: #666");
     }
     
