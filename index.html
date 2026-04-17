@@ -81,17 +81,6 @@
             font-size: 10px;
             color: #666;
         }
-        .search-hint {
-            background: #f9f1e0;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 12px;
-            color: #8b6b4d;
-            margin-top: 12px;
-        }
-        .search-hint span {
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
@@ -107,7 +96,6 @@
 
     <div class="container">
         <div class="main-content">
-            <!-- 博主信息卡 -->
             <div class="weibo-card">
                 <div class="card-header">
                     <div class="avatar">林</div>
@@ -119,7 +107,6 @@
                 <div class="content">互联网民工。独居？其实一家三口。偶尔失眠。</div>
             </div>
 
-            <!-- 微博列表 -->
             <div class="weibo-card" onclick="location.href='weibo/posts/20240715.html'">
                 <div class="card-header">
                     <div class="avatar">林</div>
@@ -229,21 +216,15 @@
                     <li>翠苑王阿姨</li>
                     <li>陈屿</li>
                 </ul>
-                <div class="search-hint">
-                    💡 从日记里提取关键词，在搜索框输入：
-                    <span>贴吧</span> · <span>006</span> · <span>小禾</span> · <span>苏晚</span> · <span>结局</span>
-                </div>
             </div>
         </div>
     </div>
 
     <script src="js/meta.js"></script>
     <script>
-        // ========== 扩展搜索功能 ==========
         function doSearch() {
             let query = document.getElementById("searchInput").value.trim().toLowerCase();
             
-            // 原有搜索
             if(query === "星月图文" || query === "星月图文快印店" || query === "星月") {
                 window.location.href = "dianping/xingyue.html";
             } 
@@ -253,7 +234,6 @@
             else if(query === "陈屿") {
                 window.location.href = "archive/chen_yu/weibo.html";
             }
-            // ========== 新增搜索（扩展部分）==========
             else if(query === "贴吧" || query === "006" || query === "孙国良") {
                 window.location.href = "tieba/post2.html";
             }
@@ -263,11 +243,8 @@
             else if(query === "苏晚" || query === "笔记" || query === "苏晚的笔记") {
                 window.location.href = "suwan/index.html";
             }
-            else if(query === "结局" || query === "选择" || query === "分支") {
-                window.location.href = "branch/choice1.html";
-            }
             else {
-                alert("没有找到相关结果。\n\n试试：星月图文、翠苑王阿姨、陈屿、贴吧、006、小禾、苏晚、结局");
+                alert("没有找到相关结果。\n\n试试：星月图文、翠苑王阿姨、陈屿、贴吧、006、小禾、苏晚");
             }
         }
         
@@ -275,7 +252,6 @@
             if(e.key === "Enter") doSearch();
         });
 
-        // 第二天新内容检查
         let newContentAvailable = localStorage.getItem("new_content_available");
         let hasSeenNew = localStorage.getItem("has_seen_new_weibo");
 
