@@ -124,7 +124,12 @@
 </script>
 <script src="../js/progress.js"></script>
 <script>
-    showTruthProgress();
+    // 等待 progress.js 加载完成后再执行
+    window.addEventListener('load', function() {
+        if (typeof showTruthProgress !== 'undefined') {
+            showTruthProgress();
+        }
+    });
 </script>
 </body>
 </html>
