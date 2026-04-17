@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>601室水电明细</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <style>
+        body {
+            background: #f0ede8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+        .header {
+            background: #2c3e2f;
+            color: white;
+            padding: 16px 20px;
+        }
+        .table {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background: #f5f5f5;
+            font-weight: bold;
+        }
+        .abnormal {
+            color: #c44;
+            font-weight: bold;
+        }
+        .footer {
+            background: #f5f2ed;
+            padding: 12px;
+            text-align: center;
+            font-size: 11px;
+        }
+        .back-link {
+            display: block;
+            padding: 16px;
+            text-align: center;
+            background: #fff;
+            color: #2c3e2f;
+            text-decoration: none;
+            border-top: 1px solid #eee;
+        }
+        .note {
+            background: #fff8f0;
+            padding: 16px;
+            margin: 0 20px 20px 20px;
+            border-left: 3px solid #c44;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>💧 601室水电明细</h2>
+        <p style="font-size:12px;">2023年1月 - 2024年8月</p>
+    </div>
+
+    <div class="note">
+        ⚠️ 注：601室自2015年起无正式住户登记。以下数据来自电表远程读数。
+    </div>
+
+    <div class="table">
+        <table>
+            <tr>
+                <th>月份</th>
+                <th>用水量(吨)</th>
+                <th>用电量(度)</th>
+                <th>备注</th>
+            </tr>
+            <tr>
+                <td>2023年7月</td>
+                <td>8</td>
+                <td>120</td>
+                <td>陈屿一家入住</td>
+            </tr>
+            <tr>
+                <td>2023年8月</td>
+                <td>10</td>
+                <td>145</td>
+                <td>正常</td>
+            </tr>
+            <tr class="abnormal">
+                <td>2023年9月</td>
+                <td>0</td>
+                <td class="abnormal">87</td>
+                <td>⚠️ 陈屿失踪，但电表仍走字</td>
+            </tr>
+            <tr class="abnormal">
+                <td>2023年10月</td>
+                <td>0</td>
+                <td class="abnormal">93</td>
+                <td>⚠️ 无人入住，持续耗电</td>
+            </tr>
+            <tr>
+                <td>2024年7月</td>
+                <td>7</td>
+                <td>110</td>
+                <td>林述一家入住</td>
+            </tr>
+            <tr>
+                <td>2024年8月</td>
+                <td>9</td>
+                <td>135</td>
+                <td>正常</td>
+            </tr>
+            <tr class="abnormal">
+                <td>2024年9月</td>
+                <td>0</td>
+                <td class="abnormal">? </td>
+                <td>⚠️ 林述失踪，数据待更新</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        数据来源：国网杭州供电公司 · 翠苑物业抄表
+    </div>
+    <a href="../../index.html" class="back-link">← 返回微博</a>
+</div>
+<script src="../../js/meta.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>小禾的画 · 叔叔走了</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <style>
+        body {
+            background: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background: #0a0a0a;
+            padding: 30px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+        .drawing-placeholder {
+            width: 100%;
+            height: 400px;
+            background: #2a2a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .caption {
+            color: #888;
+            font-size: 12px;
+            margin-top: 16px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #8b6b4d;
+            text-decoration: none;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="drawing-placeholder" onclick="alert('素材：xiaohe_drawing_4.png\n小禾说：叔叔挥手，说他走了')">
+        🎨 素材文件：xiaohe_drawing_4.png
+        <span style="font-size:11px;">点击查看</span>
+    </div>
+    <div class="caption">小禾的画 · “叔叔走了” · 2024年8月30日</div>
+    <div class="caption" style="color:#666;">小禾说：“叔叔跟我挥手，他说他要走了，等下一个来。”</div>
+    <a href="../index.html" class="back-link">← 返回日记本</a>
+</div>
+<script src="../../js/meta.js"></script>
+</body>
+</html>

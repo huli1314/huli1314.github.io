@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>林述的微博</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .back-link {
+            display: block;
+            padding: 16px;
+            text-align: center;
+            color: #ff8200;
+            text-decoration: none;
+            border-top: 1px solid #f0f0f0;
+        }
+        .comment-section {
+            background: #fafafa;
+            padding: 16px;
+            border-top: 1px solid #f0f0f0;
+        }
+        .comment {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+        .post-image {
+            margin: 16px 0;
+            background: #f0f0f0;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="weibo-card" style="margin:0; border-radius:0;">
+        <div class="card-header">
+            <div class="avatar">林</div>
+            <div class="user-info">
+                <div class="name">林述的日常</div>
+                <div class="time">2024-07-15 21:34 · iPhone 14</div>
+            </div>
+        </div>
+        <div class="content">
+            <p>搬来翠苑三区第三天。老小区确实安静，就是楼下垃圾桶没人收，有点味儿。</p>
+            <p>物业说这周处理，等等看吧。</p>
+            <div class="post-image" onclick="alert('素材：trash_bin.png')">📷 点击查看配图</div>
+        </div>
+        <div class="location">📍 杭州 · 翠苑三区</div>
+        <div class="actions"><span>❤️ 23</span> <span>💬 8</span> <span>🔄 2</span></div>
+    </div>
+    <div class="comment-section">
+        <div class="comment"><strong>翠苑王阿姨：</strong> 小伙子住哪一幢？6幢的垃圾桶确实老没人收，我跟物业说了好几次了。</div>
+        <div class="comment"><strong>林述的日常：</strong> 回复 @翠苑王阿姨：6幢601。阿姨也住6幢？</div>
+        <div class="comment"><strong>翠苑王阿姨：</strong> 回复 @林述的日常：我住4幢。601啊……之前不是空着吗？</div>
+        <div class="comment"><strong>林述的日常：</strong> 回复 @翠苑王阿姨：中介说之前有人住的，刚搬走不久。</div>
+        <div class="comment"><strong>翠苑王阿姨：</strong> 回复 @林述的日常：哦……那我记错了。住得惯就好。</div>
+    </div>
+    <a href="../../index.html" class="back-link">← 返回首页</a>
+</div>
+<script src="../../js/meta.js"></script>
+</body>
+</html>

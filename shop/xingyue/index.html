@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>星月图文快印 · 杭州翠苑店</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <style>
+        body {
+            background: #f0ede8;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: #2c4a3e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+        .sub {
+            font-size: 12px;
+            opacity: 0.7;
+        }
+        .nav {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .nav a {
+            color: #2c4a3e;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .content {
+            padding: 30px;
+        }
+        .service {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .sidebar {
+            background: #f9f5f0;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .order-search {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .order-search input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .order-search button {
+            background: #2c4a3e;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .footer {
+            background: #2c2b28;
+            color: #999;
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+        }
+        .notice {
+            background: #fff8f0;
+            border-left: 3px solid #c44;
+            padding: 12px;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">星月图文快印</div>
+        <div class="sub">Xingyue Digital Printing · Since 2012</div>
+    </div>
+    <div class="nav">
+        <a href="#">首页</a>
+        <a href="#">打印服务</a>
+        <a href="#">设计定制</a>
+        <a href="#">关于我们</a>
+    </div>
+    <div class="content">
+        <h2>📄 打印 · 复印 · 快印</h2>
+        <p style="margin:15px 0; color:#666;">杭州翠苑三区底商12号 · 营业9年</p>
+        
+        <div class="service">
+            <strong>黑白打印/复印</strong> <span style="color:#c44;">¥0.2/页</span>
+            <p style="font-size:13px; color:#666;">A4 · 激光打印</p>
+        </div>
+        <div class="service">
+            <strong>彩色打印/复印</strong> <span style="color:#c44;">¥1.0/页</span>
+            <p style="font-size:13px; color:#666;">高精度色彩</p>
+        </div>
+        <div class="service">
+            <strong>装订/胶装</strong> <span style="color:#c44;">¥5起</span>
+            <p style="font-size:13px; color:#666;">标书 · 论文 · 作品集</p>
+        </div>
+
+        <div class="sidebar">
+            <h3>🔍 订单查询</h3>
+            <p style="font-size:13px; margin-bottom:10px;">输入手机号或姓名查询打印记录</p>
+            <div class="order-search">
+                <input type="text" id="orderName" placeholder="姓名或手机号">
+                <button onclick="searchOrder()">查询</button>
+            </div>
+            <div id="orderResult" style="margin-top:15px; font-size:13px;"></div>
+        </div>
+
+        <div class="notice">
+            📌 店主留言：<br>
+            本店只做打印生意。如果有人在店里给你递什么东西，那不是我给的。请自己判断。
+        </div>
+    </div>
+    <div class="footer">
+        © 2024 星月图文快印 · 浙ICP备2024xxxx号
+    </div>
+</div>
+
+<script src="../../js/meta.js"></script>
+<script>
+    function searchOrder() {
+        let name = document.getElementById("orderName").value.trim();
+        if(name === "林述" || name === "林述的日常") {
+            document.getElementById("orderResult").innerHTML = `
+                <div style="background:#1a1a1a; color:#c44; padding:12px; border-radius:4px;">
+                    ⚠️ 该订单存在异常记录。<br>
+                    客户：林述 · 打印时间：2024-08-03 19:23<br>
+                    打印内容：一份寻人启事<br>
+                    备注：打印结束后，有人将一张传单塞入客户袋中。监控中无法辨认该人面容。<br>
+                    <a href="#" style="color:#aa8a6a;" onclick="alert('素材：missing_poster.png'); return false;">查看打印文件 →</a>
+                </div>
+            `;
+        } else if(name === "陈屿") {
+            document.getElementById("orderResult").innerHTML = `
+                <div style="background:#1a1a1a; color:#c44; padding:12px; border-radius:4px;">
+                    ⚠️ 该订单存在异常记录。<br>
+                    客户：陈屿 · 打印时间：2023-08-31 20:15<br>
+                    打印内容：一份寻人启事（自己的）<br>
+                    备注：客户取件后，在店门口站了5分钟，然后离开。监控显示他走向6幢。<br>
+                    这是最后一次记录。
+                </div>
+            `;
+        } else {
+            document.getElementById("orderResult").innerHTML = `<span style="color:#999;">未查询到订单。试试：林述 或 陈屿</span>`;
+        }
+    }
+</script>
+</body>
+</html>

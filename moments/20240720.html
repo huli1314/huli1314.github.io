@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>朋友圈</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        body {
+            background: #ededed;
+        }
+        .moments-container {
+            max-width: 500px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .header {
+            background: #fff;
+            padding: 16px;
+            border-bottom: 1px solid #dbdbdb;
+            text-align: center;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+        .back-link {
+            display: block;
+            padding: 16px;
+            text-align: center;
+            color: #576b95;
+            text-decoration: none;
+            border-top: 1px solid #f0f0f0;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="moments-container">
+    <div class="header">朋友圈</div>
+    
+    <div class="moment-card">
+        <div class="moment-header">
+            <div class="moment-avatar">林</div>
+            <div>
+                <div class="moment-name">林述</div>
+                <div class="moment-time">2024-07-20 22:15</div>
+            </div>
+        </div>
+        <div class="moment-content">
+            <p>搬来一周了。老小区挺安静，就是楼道灯有时候不亮。</p>
+            <div class="moment-image" onclick="alert('素材：601_door.png')">📷 601的门牌号</div>
+        </div>
+    </div>
+
+    <div class="moment-card">
+        <div class="moment-header">
+            <div class="moment-avatar">苏</div>
+            <div>
+                <div class="moment-name">苏晚</div>
+                <div class="moment-time">2024-07-20 23:47</div>
+            </div>
+        </div>
+        <div class="moment-content">
+            <p>小禾说新家“有客人”，我问在哪，她指楼道。😂 小孩子真是</p>
+        </div>
+    </div>
+
+    <a href="../index.html" class="back-link">← 返回微博</a>
+</div>
+<script src="../js/meta.js"></script>
+</body>
+</html>

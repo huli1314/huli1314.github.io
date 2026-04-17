@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>林述的微博</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .back-link {
+            display: block;
+            padding: 16px;
+            text-align: center;
+            color: #ff8200;
+            text-decoration: none;
+            border-top: 1px solid #f0f0f0;
+        }
+        .comment-section {
+            background: #fafafa;
+            padding: 16px;
+            border-top: 1px solid #f0f0f0;
+        }
+        .comment {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+        .post-image {
+            margin: 16px 0;
+            background: #f9f1e0;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8b6b4d;
+            border-radius: 8px;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="weibo-card" style="margin:0; border-radius:0;">
+        <div class="card-header">
+            <div class="avatar">林</div>
+            <div class="user-info">
+                <div class="name">林述的日常</div>
+                <div class="time">2024-08-25 20:15 · iPhone 14</div>
+            </div>
+        </div>
+        <div class="content">
+            <p>小禾今天画了一幅画，说“楼道里有个叔叔”。</p>
+            <p>我问什么样的叔叔，她说“没有脸”。</p>
+            <p>小孩子想象力丰富……应该是想象力吧？</p>
+            <div class="post-image" onclick="alert('素材：xiaohe_drawing_1.png')">🎨 小禾的画 · 点击查看</div>
+        </div>
+        <div class="actions"><span>❤️ 167</span> <span>💬 73</span> <span>🔄 21</span></div>
+    </div>
+    <div class="comment-section">
+        <div class="comment"><strong>苏晚不晚：</strong> 我也看到了。小禾最近老画这个。我问她在哪看到的，她指楼道。</div>
+        <div class="comment"><strong>翠苑王阿姨：</strong> 小朋友有时候能看到大人看不到的东西……</div>
+        <div class="comment"><strong>林述的日常：</strong> 回复 @翠苑王阿姨：什么意思？</div>
+        <div class="comment"><strong>翠苑王阿姨：</strong> 回复 @林述的日常：没什么。你多注意小禾。</div>
+    </div>
+    <a href="../../index.html" class="back-link">← 返回首页</a>
+</div>
+<script src="../../js/meta.js"></script>
+</body>
+</html>

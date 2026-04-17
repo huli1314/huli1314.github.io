@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>陈屿的相册 · 一一的画</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <style>
+        body {
+            background: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            background: #0a0a0a;
+            padding: 30px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+        .photo-placeholder {
+            width: 100%;
+            height: 400px;
+            background: #2a2a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .caption {
+            color: #888;
+            font-size: 12px;
+            margin-top: 16px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #8b6b4d;
+            text-decoration: none;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="photo-placeholder" onclick="alert('素材：chenyu_photo_3.png')">
+        📷 素材文件：chenyu_photo_3.png
+    </div>
+    <div class="caption">一一的画 · “楼道里的叔叔”</div>
+    <div class="caption" style="color:#666;">备注：女儿画的人没有脸。问她为什么，她说“因为他没有”。</div>
+    <a href="../weibo.html" class="back-link">← 返回相册</a>
+</div>
+<script src="../../../js/meta.js"></script>
+</body>
+</html>

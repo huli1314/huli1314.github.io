@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>选择 · 搬走还是留下？</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        body {
+            background: #0a0a0a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: monospace;
+        }
+        .container {
+            max-width: 500px;
+            background: #111;
+            border: 1px solid #333;
+            padding: 40px;
+            text-align: center;
+        }
+        .question {
+            font-size: 18px;
+            color: #c44;
+            margin-bottom: 30px;
+        }
+        .desc {
+            color: #888;
+            font-size: 13px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .btn-leave {
+            background: #2a2a2a;
+            color: #888;
+            border: 1px solid #444;
+        }
+        .btn-leave:hover {
+            background: #444;
+            color: #fff;
+        }
+        .btn-stay {
+            background: #2a2a2a;
+            color: #c44;
+            border: 1px solid #c44;
+        }
+        .btn-stay:hover {
+            background: #c44;
+            color: #fff;
+        }
+        .btn-patrol {
+            background: #2a2a2a;
+            color: #8b6b4d;
+            border: 1px solid #8b6b4d;
+        }
+        .btn-patrol:hover {
+            background: #8b6b4d;
+            color: #fff;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #666;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="question">⚠️ 最后一个选择 ⚠️</div>
+    <div class="desc">
+        你已经知道了601的真相。<br>
+        脚步声、纸条、失踪的人、夜巡者。<br>
+        现在，你要怎么选择？
+    </div>
+    <div class="buttons">
+        <button class="btn btn-leave" onclick="localStorage.setItem('final_choice', 'leave'); window.location.href='../ending/leave.html'">🏠 搬走</button>
+        <button class="btn btn-stay" onclick="localStorage.setItem('final_choice', 'stay'); window.location.href='../ending/stay.html'">🚪 留下</button>
+        <button class="btn btn-patrol" onclick="localStorage.setItem('final_choice', 'patrol'); window.location.href='../ending/patrol.html'">🌙 成为夜巡者</button>
+    </div>
+    <a href="../index.html" class="back-link">← 返回微博</a>
+</div>
+<script src="../js/meta.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>真结局 · 揭开真相</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        body {
+            background: #0a0a0a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background: #111;
+            border: 2px solid #8b6b4d;
+            padding: 40px;
+            text-align: center;
+        }
+        .title {
+            font-size: 22px;
+            color: #8b6b4d;
+            margin-bottom: 20px;
+        }
+        .content {
+            color: #ddd;
+            font-size: 14px;
+            line-height: 1.9;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .restart {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2a2a2a;
+            color: #8b6b4d;
+            text-decoration: none;
+            border: 1px solid #8b6b4d;
+            margin-top: 20px;
+        }
+        .restart:hover {
+            background: #8b6b4d;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title">◈ 真结局 · 真相 ◈</div>
+    <div class="content">
+        <p>你收集了所有线索。</p>
+        <p>孙国良的档案、陈屿的微博、方敏的寻人启事、小禾的画、苏晚的录音……</p>
+        <p>现在，你知道真相了。</p>
+        <hr style="border-color:#333; margin:16px 0;">
+        <p><strong>601不是普通的房子。</strong></p>
+        <p>它是一个“入口”。</p>
+        <p>脚步声是在数人。每数到一个数字，就会带走一个人。</p>
+        <p>孙国良是第6个。陈屿是第6个。林述也是第6个。</p>
+        <p>同一个数字。同一个房间。不同的人。</p>
+        <p>因为“它”数的不是人。</p>
+        <p><strong>它数的是“你听到的第几声”。</strong></p>
+        <p>从1楼到6楼，一共6声。第6声停在门口。</p>
+        <p>如果你听到了第6声，你就被标记了。</p>
+        <p style="color:#c44; margin-top:16px;">而你现在……正在看这个页面。</p>
+        <p style="color:#c44;">你听到了第几声？</p>
+    </div>
+    <a href="../index.html" class="restart">重新开始</a>
+</div>
+<script src="../js/meta.js"></script>
+<script>
+    let visitCount = localStorage.getItem("visit_count") || 1;
+    console.log(`%c[真结局] 你找到了真相。`, "color: #8b6b4d");
+    console.log(`%c[系统] 你已经看了 ${visitCount} 次。它知道你了。`, "color: #c44");
+</script>
+</body>
+</html>

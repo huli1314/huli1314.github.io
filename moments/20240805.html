@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>朋友圈</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        body {
+            background: #ededed;
+        }
+        .moments-container {
+            max-width: 500px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .header {
+            background: #fff;
+            padding: 16px;
+            border-bottom: 1px solid #dbdbdb;
+            text-align: center;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+        .back-link {
+            display: block;
+            padding: 16px;
+            text-align: center;
+            color: #576b95;
+            text-decoration: none;
+            border-top: 1px solid #f0f0f0;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="moments-container">
+    <div class="header">朋友圈</div>
+    
+    <div class="moment-card">
+        <div class="moment-header">
+            <div class="moment-avatar">林</div>
+            <div>
+                <div class="moment-name">林述</div>
+                <div class="moment-time">2024-08-05 08:30</div>
+            </div>
+        </div>
+        <div class="moment-content">
+            <p>楼下图文店老板人不错，便宜。推荐。</p>
+            <div class="moment-image" onclick="alert('素材：xingyue_store.png')">📷 星月图文店门面</div>
+        </div>
+    </div>
+
+    <div class="moment-card">
+        <div class="moment-header">
+            <div class="moment-avatar">王</div>
+            <div>
+                <div class="moment-name">王秀兰</div>
+                <div class="moment-time">2024-08-05 09:15</div>
+            </div>
+        </div>
+        <div class="moment-content">
+            <p>小林，老周那人……你别跟他走太近。他知道一些事，但不该你知道。</p>
+        </div>
+    </div>
+
+    <a href="../index.html" class="back-link">← 返回微博</a>
+</div>
+<script src="../js/meta.js"></script>
+</body>
+</html>
