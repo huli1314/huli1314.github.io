@@ -20,18 +20,13 @@
             text-align: center;
         }
         .drawing-placeholder {
-            width: 100%;
-            height: 400px;
-            background: #2a2a2a;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            font-size: 14px;
-            cursor: pointer;
             margin-bottom: 20px;
-            flex-direction: column;
-            gap: 10px;
+        }
+        .drawing-placeholder img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
         }
         .caption {
             color: #888;
@@ -49,14 +44,17 @@
 </head>
 <body>
 <div class="container">
-    <div class="drawing-placeholder" onclick="alert('素材：xiaohe_drawing_4.png\n小禾说：叔叔挥手，说他走了')">
-        🎨 素材文件：xiaohe_drawing_4.png
-        <span style="font-size:11px;">点击查看</span>
+    <div class="drawing-placeholder">
+        <img src="../../assets/images/xiaohe_drawing_4.png" alt="小禾的画：叔叔走了">
     </div>
     <div class="caption">小禾的画 · “叔叔走了” · 2024年8月30日</div>
     <div class="caption" style="color:#666;">小禾说：“叔叔跟我挥手，他说他要走了，等下一个来。”</div>
     <a href="../index.html" class="back-link">← 返回日记本</a>
 </div>
 <script src="../../js/meta.js"></script>
+<script src="../../js/progress.js"></script>
+<script>
+    if (typeof recordClue !== 'undefined') recordClue(14);
+</script>
 </body>
 </html>
